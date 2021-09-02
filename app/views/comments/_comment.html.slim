@@ -1,0 +1,8 @@
+p
+  strong Commenter Name: 
+  = comment.comment_name
+
+p
+  strong Comment: 
+  = comment.comment_text
+= link_to 'Delete Comment',[comment.post, comment], method: :delete

@@ -1,0 +1,10 @@
+h1
+  = @post.title
+p
+  = @post.content
+h2 Comments:
+= render @post.comments
+
+h2 
+  | Add new comment:
+= render 'comments/form'

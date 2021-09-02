@@ -1,0 +1,13 @@
+= form_with model: @post do |form|
+  div
+    = form.label :title
+    br
+    = form.text_field :title
+    br
+  div
+    = form.label :content
+    br
+    = form.text_area :content
+    br
+  div
+    = form.submit
